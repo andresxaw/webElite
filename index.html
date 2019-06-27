@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <title>Elite - Centro de Enseñanza Automovilistica</title>
   <style>
     *{margin: 0;padding: 0;border:none;background: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
@@ -13,14 +14,15 @@
     .right{text-align: right}.center{text-align: center}.left{text-align: left}
     .section{padding:10em 0;}
     .aside{padding:2em 0;}
-    .menu{padding:3em 0;border-bottom: 0.2em solid #f9ea1a}
+    .menu{padding:2em;border-bottom: 0.2em solid #f9ea1a}
+    .inicio{padding: 10em 0; background-image: url('img/inicio.jpg'); background-size: cover }
 
 
     .bg-gray{background-color: #f2f2f2}
     a{text-decoration:none; color:black}
     .separar{margin: 0.5em;}
-    .fs-large{font-size:4em;}
-    .fs-medium{font-size:2.5em;}
+    .fs-large{font-size:2.5em;}
+    .fs-medium{font-size:2em;}
 
     
     
@@ -31,6 +33,9 @@
     .bg-blue{ background-color: #009bdb}
 
     .principal-list{margin-left: 3em}
+
+    .logo{height: 7em;}
+    .icon{height: 2em;}
 
 
     @media(min-width:941px){
@@ -47,24 +52,24 @@
 <body>
     <div id="Menu" class="menu" >
         <div class="columns2  middle ">
-            <img src="img/logo.png" alt="logo">
+            <img class="logo" src="img/logo.png" alt="logo">
         </div>
         <div class="columns2 right middle" >
             <ul> 
                  <li class="line separar">
                         <a class="line middle" href="apppi.whatsapp">
-                            <img  class="line middle" src="img/whatsapp.png" alt="wa">
+                            <img  class="line middle icon" src="img/whatsapp.png" alt="wa">
                             <p class="line middle">3222459733</p>
                         </a>
                 </li>
                 <li class="line separar">
-                    <img class="line middle"src="img/telefono-logo.png" alt="telefonoFijo">
+                    <img class="line middle icon"src="img/telefono-logo.png" alt="telefonoFijo">
                     <p class="line middle" >(1)30263052</p>
                 </li>
             </ul>
         </div>
     </div>
-    <div id="Inicio">
+    <div id="Inicio" class="inicio">
       <div class="container" >
           <h1 class="fs-large">Elite academia de conduccion certificada</h1>
           <ul>
@@ -77,7 +82,6 @@
   </div>
     <div class="aside bg-gray" id="Sedes" >
         <div  class="container">
-            <h2>Nuestras Sedes</h2>
             <div class="columns2 middle center">
                 <div class="line middle">
                     <img src="img/location.png" alt="ubicacion">
