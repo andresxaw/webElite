@@ -12,6 +12,7 @@
     .container{width: 100%}
     .line{display: inline-block;}.middle{vertical-align:middle}.bottom{vertical-align: bottom}.top{vertical-align: top }
     .right{text-align: right}.center{text-align: center}.left{text-align: left}
+    .dark{font-weight: 700}.normal{font-weight: 400}
     .section{padding:10em 0;}
     .aside{padding:2em 0;}
     .buttom{border-radius: 10px;box-shadow: inset 0 -0.2em rgba(0,0,0,.3);border-top: 2px solid;border-color: rgba(255,255,255,0.3); font-weight: 700; padding: .7em 2em; transition: background-color .5s ease}
@@ -19,7 +20,7 @@
 
 
     .menu{padding:1em;border-bottom: 0.2em solid #f9ea1a;position: fixed;top:0;background-color: white;width: 100%}
-    .inicio{padding: 20em 0; background-image: url('img/inicio.jpg'); background-size: cover }
+    .inicio{padding: 15em 0; background-image: url('img/inicio.jpg'); background-size: cover }
     body{padding-top:9.52em;}
     .location{height:3.6em ; margin-right: 1em;}
     .allrights{padding: 2em 0;}
@@ -28,9 +29,10 @@
     .bg-gray{background-color: #f2f2f2}
     a{text-decoration:none; color:#333; display: inline-block;}
     .separar{margin: 0.5em;}
-    .fs-large{font-size:2.5em;}
-    .fs-medium{font-size:2em;}
+    .fs-large{font-size:2.6em;}
+    .fs-medium{font-size:1.6em;}
     .fs-normal{font-size:1.4em}
+    .marginTC{margin-bottom: 2em}
 
     
     
@@ -39,11 +41,13 @@
     .c-blue{color:#009bdb}
     .bg-yellow{background-color: #f9ea1a}
     .bg-blue{background-color: #009bdb}
+    .bg-dark-gray{background-color: #bcbcbc;}
 
-    .principal-list{margin-left: 1.5em}
+    .principal-list{margin: 1.6em 0 0 3em; font-weight: 700}
+    .list-icon{height: 2.5em;}
 
     .logo{height: 7em;}
-    .icon{height: 1.6em;}
+    .icon{height: 1.5em;}
 
 
     @media(min-width:941px){
@@ -67,13 +71,13 @@
                  <li class="line separar">
                      <a class="line middle" href="https://wa.me/573107727822?text=Hola,%20me%20interesa%20obtener%20más%20información%20acerca%20de%20los%20pases%20de%20conducción"text>
                         <img  class="line middle icon" src="img/whatsapp.png" alt="wa">
-                        <p class="line middle">3222459733</p>
+                        <p class="line middle dark c-blue">322 245 9733</p>
                      </a>
                 </li>
                 <li class="line separar">
                     <a class="line middle" href="tel:3107727822">
                         <img class="line middle icon"src="img/telefono-logo.png" alt="telefonoFijo">
-                        <p class="line middle" >(1)30263052</p>
+                        <p class="line middle dark c-blue" >(1)302 6305</p>
                     </a>    
                 </li>
             </ul>
@@ -81,16 +85,19 @@
     </div>
     <div id="Inicio" class="inicio">
       <div class="container" >
-          <h1 class="fs-large">Elite academia de conduccion certificada</h1>
+          <h1 class="fs-large">Elite - Academia de Conducción Certificada</h1>
           <ul>
-              <li class="fs-medium principal-list">Más de 8 años de experiencia </li>
-              <li class="fs-medium principal-list">Clases teóricas en nuestras sedes</li>
-              <li class="fs-medium principal-list">Clases de domingo a domingo</li>
-              <li class="fs-medium principal-list">Pagos diferidos durante el curso</li>
+              <li class="principal-list"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Más de 8 años de experiencia  <p></p></li>
+              <li class="principal-list"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Clases teóricas en nuestras sedes <p></p></li>
+              <li class="principal-list"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Clases de domingo a domingo <p></p></li>
+              <li class="principal-list"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Pagos diferidos durante el curso <p></p></li>
+              <li class="principal-list">
+                <a class="buttom bg-yellow" href="https://wa.me/573107727822?text=Hola,%20me%20interesa%20obtener%20más%20información%20de%20la%20licencia%20de%20conducción%20(A2%20Servicio%20Particular)"><img  class="line middle icon" src="img/whatsapp.png" alt="wa"> ¡Cotizar Ahora!</a>
+              </li>
           </ul>
       </div>
   </div>
-    <div class="aside bg-gray" id="Sedes" >
+    <div class="aside bg-dark-gray" id="Sedes" >
         <div  class="container">
             <div class="columns2 middle center">
                 <div class="line middle">
@@ -126,8 +133,8 @@
             </div>
         </div>
     </div>
-    <div  class="section" id="Categorias">
-        <h2 class="center separar">Categorías</h2>
+    <div  class="section bg-gray" id="Categorias">
+        <h2 class="center separar center marginTC">Categorías</h2>
       <div class="container ">
           <div class="columns3 center">
               <img class="w50" src="img/motorcycle.png" alt="Moto">
@@ -150,10 +157,10 @@
           </div>
       </div>
   </div>
-    <div  class="section bg-gray" id="Vehiculos" >
-        <div class="container">
-            <h2>Vehículos Nuevos</h2>
-            <h3>Pensamos en tu comodidad, por eso renovamos nuestros vehiculos</h3>
+    <div  class="section" id="Vehiculos" >
+        <div class="container center">
+            <h2 class="center">Vehículos Nuevos</h2>
+            <h3 class="marginTC center">Pensamos en tu comodidad, por eso renovamos nuestros vehiculos</h3>
             <div class="columns3">
                 <img  class="w80" src="img/sail.jpg" alt="Sail">
                 <ul>
@@ -207,7 +214,8 @@
     <div class="aside bg-yellow" id="Tarifas">
       <div class="container" class="columns2 bg-yellow">
           <div class="columns2">
-              <h3>Las mejores tarifas del mercado</h3>
+              <h3 class="fs-medium">Las mejores tarifas del mercado</h3>
+              <h4 class="fs-medium normal">Facilidades de pago</h4>
           </div>
           <div class="columns2">
               <a href="https://wa.me/573107727822?text=Hola,%20me%20interesa%20obtener%20información%20acerca%20de%20las%20tarifas%20de%20sus%20licencias%20de%20conducción">Conoce las tarifas</a>
@@ -216,8 +224,8 @@
   </div>
     <div  class="section bg-blue"id="Instructores">
         <div  class="container">
+            <h2 class="center marginTC">Instructores Capacitados</h2>
             <div class="columns2">
-                <h2 class="line middle">Instructores Capacitados</h2>
                 <p class="line middle">Instructores profesionales con los mejores metodos de aprendizaje</p>
                 <h3 class="line middle">Conducir No es un juego... Recuerda que en casa siempre hay alguien que te espera </h3>
             </div >
