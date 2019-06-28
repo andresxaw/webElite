@@ -13,6 +13,7 @@
     .line{display: inline-block;}.middle{vertical-align:middle}.bottom{vertical-align: bottom}.top{vertical-align: top }
     .right{text-align: right}.center{text-align: center}.left{text-align: left}
     .dark{font-weight: 700}.normal{font-weight: 400}
+    .relative{position:relative}
     .section{padding:10em 0;}
     .aside{padding:2em 0;}
     .buttom{font-weight: 700; box-shadow: 0px 2px 2px 2px rgba(0,0,0,.2);border-radius: 10px; padding: .5em 2em; transition: background-color .5s ease}
@@ -33,6 +34,7 @@
     .bg-gray{background-color: #f2f2f2}
     a{text-decoration:none; color:#333; display: inline-block;}
     .separar{margin: 0.5em;}
+    .fs-xxlarge{font-size: 2.8em}
     .fs-large{font-size:2.6em;}
     .fs-medium{font-size:1.6em;}
     .fs-normal{font-size:1.4em}
@@ -56,6 +58,10 @@
 
     .main-button{margin-top: 2.5em}
     .tarifas-button{margin-top: 1.2em}
+    .house{width: 100%; margin-top: 10em;}
+    #Instructores{padding-bottom: 0}
+    .no-game{font-family: serif; text-transform: uppercase}
+    .instructor{border-radius: 20px}
 
 
     @media(min-width:941px){
@@ -172,7 +178,7 @@
             <div class="columns3 fs-normal">
                 <img  class="w80" src="img/sail.jpg" alt="Sail">
                 <ul>
-                    <li class="dark">ChevroletSail 2017</li>
+                    <li class="dark">Chevrolet Sail 2017</li>
                 </ul>
             </div>
             <div class="columns3 fs-normal">
@@ -208,27 +214,28 @@
         </div>
     </div>
     <div class="aside bg-dark-gray" id="Tarifas">
-      <div class="container" class="columns2 bg-yellow ">
+      <div class="container" class="columns2 bg-yellow middle">
           <div class="columns2 middle">
               <h3 class="fs-medium">Las mejores tarifas del mercado</h3>
               <h4 class="fs-medium normal">Facilidades de pago</h4>
           </div>
-          <div class="columns2 fs-normal center middle">
-              <a class=" fs-little bg-yellow buttom2 " href="https://wa.me/573107727822?text=Hola,%20me%20interesa%20obtener%20información%20acerca%20de%20las%20tarifas%20de%20sus%20licencias%20de%20conducción">Conoce las tarifas</a>
+          <div class="columns2 fs-normal right middle">
+                <a class="buttom bg-yellow" href="https://wa.me/573107727822?text=Hola,%20me%20interesa%20obtener%20más%20información%20de%20la%20licencia%20de%20conducción%20(C1%20Servicio%20Público)"><img  class="line middle icon" src="img/whatsapp-b.png" alt="wa"> Tarifas</a>
           </div>
       </div>
   </div>
-    <div  class="section bg-blue"id="Instructores">
-        <div  class="container">
-            <h2 class="center marginTC">Instructores Capacitados</h2>
-            <div class="columns2">
-                <p class="line middle fs-normal">Instructores profesionales con los mejores metodos de aprendizaje</p>
-                <h3 class="line middle">Conducir No es un juego... Recuerda que en casa siempre hay alguien que te espera </h3>
+    <div  class="section bg-gray" id="Instructores">
+        <div  class="container center">
+            <h2 class="center">Instructores Capacitados</h2>
+            <h3 class="marginTC center normal fs-normal marginTC">Instructores <span class="dark">profesionales</span> con los mejores <span class="dark"></span>metodos de aprendizaje</span></h3>
+            <div class="w30 line center">
+                <h3 class="line middle fs-xxlarge no-game">Conducir No es un juego... Recuerda que en casa siempre hay alguien que te espera </h3>
             </div >
-            <div class="columns2 center middle">
-                <img class="w70" src="img/instructor.jpg" alt="instructor">
+            <div class="columns2 right middle">
+                <img class="w60 instructor" src="img/instructor.jpg" alt="instructor">
             </div>
         </div>
+        <div><img class="house" src="img/casitas.jpg" alt="Ciudad"></div>
     </div>
     <div  class="section" id="Gracias">
       <div class="container center">
