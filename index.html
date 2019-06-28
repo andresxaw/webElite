@@ -9,14 +9,19 @@
   <style>
     *{margin: 0;padding: 0;border:none;background: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
     body{font-family: 'Open Sans', sans-serif;color: #333;font-size: 10px} li{list-style: none;}
-    .container{width: 100%}
+    .container{width: 100%; padding: 0 1em}
     .line{display: inline-block;}.middle{vertical-align:middle}.bottom{vertical-align: bottom}.top{vertical-align: top }
-    .right{text-align: right}.center{text-align: center}.left{text-align: left}
+    .right, .left, .center{text-align: center}
     .dark{font-weight: 700}.normal{font-weight: 400}
     .relative{position:relative}
-    .section{padding:10em 0;}
+    .section{padding:5em 0;}
     .aside{padding:2em 0;}
+
+    .w0,.w10,.w20,.w30,.w40,.w50,.w60,.w70,.w80,.w90{width: 100%}
+    .w40f{width: 40%}.w50f{width: 50%}.w60f{width: 60%}
+
     .buttom{font-weight: 700; box-shadow: 0px 2px 2px 2px rgba(0,0,0,.2);border-radius: 10px; padding: .5em 2em; transition: background-color .5s ease}
+    .pc{display: none}
     .buttom:hover{position: relative;top: -1px;background-color: #FDBC0D}
     
     .buttom2{border-radius: 10px;box-shadow: inset 0 -0.2em rgba(0,0,0,.3);border-top: 2px solid;border-color: rgba(255,255,255,0.3); font-weight: 700; padding: .7em 2em; transition: background-color .5s ease}
@@ -24,9 +29,9 @@
     
 
 
-    .menu{padding:1em;border-bottom: 0.2em solid #f9ea1a;position: fixed;top:0;background-color: white;width: 100%}
-    .inicio{padding: 15em 0; background-image: url('img/inicio.jpg'); background-size: cover }
-    body{padding-top:9.52em;}
+    .menu{padding:1em;border-bottom: 0.2em solid #f9ea1a;background-color: white;width: 100%}
+    .inicio{padding: 5em 0; background-image: url('img/inicio.jpg'); background-size: cover; background-position: -10em center }
+    body{padding-top:3.37em;}
     .location{height:3.6em ; margin-right: 1em;}
     .allrights{padding: 2em 0;}
 
@@ -60,15 +65,29 @@
     .tarifas-button{margin-top: 1.2em}
     .house{width: 100%; margin-top: 10em;}
     #Instructores{padding-bottom: 0}
+    #Gracias{padding-top: 0}
     .no-game{font-family: serif; text-transform: uppercase}
     .instructor{border-radius: 20px}
+    h2, h3, h4{margin: .5em 0}
+    .logo-footer{height: 4em; margin: 3em 0 1em 0}
+    #Contact-Bar{position: fixed; top:0; width: 100%; padding: .5em 0}
+    .maUD{margin: 2em 0}
 
 
     @media(min-width:941px){
         .container{width: 76%;margin-left: 12%}
         .columns3{width: 32.5%;display: inline-block;} .columns2{ width: 48.5%;display: inline-block;}.columns4{width: 24.5%;display: inline-block;}
+        .right{text-align: right}.center{text-align: center}.left{text-align: left}
 
-        .w90{width: 90%}.w80{width: 80%}.w70{width: 70%}.w60{width: 60%}.w50{width: 50%}.w40{width: 40%}.w30{width: 30%}.w20{width: 20%}.w10{width: 10%}
+        .w90{width: 90%}.w80{width: 80%}.w70{width: 70%}.w60{width: 60%}.w50{width: 50%}.w40{width: 40%}.w30{width: 30%}.w20{width: 20%}.w10{width: 10%}.w0{width: initial}
+        .pc{display: inline-block;}
+        .mobile{display: none}
+        .section{padding:10em 0;}
+
+        .menu{position: fixed;top:0}
+        body{padding-top:9.52em;}
+        .inicio{padding: 15em 0}
+        .maUD{margin:0}
     }
     @media(min-width:1367px){
 
@@ -76,11 +95,15 @@
   </style>
 </head>
 <body>
+    <div id="Contact-Bar" class="bg-yellow fs-normal center mobile">
+        <a class="dark line" href="https://wa.me/573222459733?text=Hola,%20me%20interesa%20obtener%20más%20información%20de%20la%20licencia%20de%20conducción%20(A2%20Servicio%20Particular)"><img  class="line middle icon" src="img/whatsapp-b.png" alt="wa"> 322 245 9733</a>
+    </div>
     <div id="Menu" class="menu center" >
+        
         <div class="columns2  middle left">
             <img class="logo" src="img/logo.png" alt="logo">
         </div>
-        <div class="columns2 right middle fs-normal" >
+        <div class="columns2 right middle fs-normal pc" >
             <ul> 
                  <li class="line separar">
                      <a class="line middle" href="https://wa.me/573107727822?text=Hola,%20me%20interesa%20obtener%20más%20información%20acerca%20de%20los%20pases%20de%20conducción"text>
@@ -89,9 +112,9 @@
                      </a>
                 </li>
                 <li class="line separar">
-                    <a class="line middle" href="tel:3107727822">
+                    <a class="line middle" href="tel:0317571135">
                         <img class="line middle icon"src="img/telefono-logo.png" alt="telefonoFijo">
-                        <p class="line middle dark c-blue" >(1)302 6305</p>
+                        <p class="line middle dark c-blue" >(1) 757 1135</p>
                     </a>    
                 </li>
             </ul>
@@ -99,13 +122,13 @@
     </div>
     <div id="Inicio" class="inicio">
       <div class="container" >
-          <h1 class="fs-large">Academia de Conducción Certificada</h1>
+          <h1 class="fs-large left">Academia de Conducción Certificada</h1>
           <ul>
-              <li class="principal-list"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Más de 8 años de experiencia  <p></p></li>
-              <li class="principal-list"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Clases teóricas en nuestras sedes <p></p></li>
-              <li class="principal-list"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Clases de domingo a domingo <p></p></li>
-              <li class="principal-list"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Pagos diferidos durante el curso <p></p></li>
-              <li class="principal-list main-button">
+              <li class="principal-list left"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Más de 8 años de experiencia  <p></p></li>
+              <li class="principal-list left"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Clases teóricas en nuestras sedes <p></p></li>
+              <li class="principal-list left"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Clases de domingo a domingo <p></p></li>
+              <li class="principal-list left"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Pagos diferidos durante el curso <p></p></li>
+              <li class="principal-list main-button left">
                 <a class="buttom bg-yellow fs-normal" href="https://wa.me/573107727822?text=Hola,%20me%20interesa%20obtener%20más%20información%20de%20la%20licencia%20de%20conducción%20(A2%20Servicio%20Particular)"><img  class="line middle icon" src="img/whatsapp-b.png" alt="wa"> ¡Cotizar Ahora!</a>
               </li>
           </ul>
@@ -113,8 +136,8 @@
   </div>
     <div class="aside bg-dark-gray" id="Sedes" >
         <div  class="container">
-            <div class="columns2 middle center">
-                <div class="line middle">
+            <div class="columns2 middle center maUD">
+                <div class="line middle w0">
                     <img  class="location"src="img/location.png" alt="ubicacion">
                 </div>
                 <div class="line middle left">
@@ -129,8 +152,8 @@
                     </ul>
                 </div>    
             </div>
-            <div class="columns2 middle center">
-                <div class="line middle">
+            <div class="columns2 middle center maUD">
+                <div class="line middle w0">
                     <img class="location" src="img/location.png" alt="ubicacion">
                 </div>
                 <div class="line middle left">  
@@ -150,21 +173,21 @@
     <div  class="section bg-gray" id="Categorias">
         <h2 class="center separar center marginTC">Categorías</h2>
       <div class="container fs-normal">
-          <div class="columns3 center">
-              <img class="w50" src="img/motorcycle.png" alt="Moto">
+          <div class="columns3 center maUD">
+              <img class="w50 w50f" src="img/motorcycle.png" alt="Moto">
               <h3>Moto</h3>
               <h4>A2 Servicio Particular</h4>
               <a class="buttom bg-yellow tarifas-button" href="https://wa.me/573107727822?text=Hola,%20me%20interesa%20obtener%20más%20información%20de%20la%20licencia%20de%20conducción%20(A2%20Servicio%20Particular)">
                 <img  class="line middle icon" src="img/whatsapp-b.png" alt="wa"> Tarifas</a>
           </div>
-          <div class="columns3 center">
-              <img class="w40" src="img/car.png" alt="Carro">
+          <div class="columns3 center maUD">
+              <img class="w40 w40f" src="img/car.png" alt="Carro">
               <h3>Carro</h3>
               <h4>B1 Servicio Particular </h4>
               <a class="buttom bg-yellow tarifas-button" href="https://wa.me/573107727822?text=Hola,%20me%20interesa%20obtener%20más%20información%20de%20la%20licencia%20de%20conducción%20(B1%20Servicio%20Particular)"> <img class="line middle icon" src="img/whatsapp-b.png" alt="wa"> Tarifas</a>
           </div>
-          <div class="columns3 center">
-              <img class="w40" src="img/truck.png" alt="Camion">
+          <div class="columns3 center maUD">
+              <img class="w40 w40f" src="img/truck.png" alt="Camion">
               <h3>Camión</h3>
               <h4> C1 Servicio Publico</h4>
               <a class="buttom bg-yellow tarifas-button" href="https://wa.me/573107727822?text=Hola,%20me%20interesa%20obtener%20más%20información%20de%20la%20licencia%20de%20conducción%20(C1%20Servicio%20Público)"><img  class="line middle icon" src="img/whatsapp-b.png" alt="wa"> Tarifas</a>
@@ -175,37 +198,37 @@
         <div class="container center">
             <h2 class="fs-normal">Vehículos Nuevos</h2>
             <h3 class="marginTC center normal fs-normal">Pensamos en tu comodidad, por eso renovamos nuestros vehiculos</h3>
-            <div class="columns3 fs-normal">
+            <div class="columns3 fs-normal maUD">
                 <img  class="w80" src="img/sail.jpg" alt="Sail">
                 <ul>
                     <li class="dark">Chevrolet Sail 2017</li>
                 </ul>
             </div>
-            <div class="columns3 fs-normal">
+            <div class="columns3 fs-normal maUD">
                 <img  class="w80" src="img/duster.jpg" alt="Duster">
                 <ul>
                     <li class="dark">Renault Duster 2017</li>
                 </ul>
             </div>
-            <div class="columns3 fs-normal">
+            <div class="columns3 fs-normal maUD">
                 <img  class="w80"src="img/logan.jpg" alt="Logan">
                 <ul>
                     <li class="dark">Renault Logan 2016</li>
                 </ul>
             </div>
-            <div class="columns3 fs-normal">
+            <div class="columns3 fs-normal maUD">
                 <img class="w80"src="img/picanto.jpg" alt="Picanto">
                 <ul>
                     <li class="dark">Kia Picanto 2016</li>
                 </ul>
             </div>
-            <div class="columns3 fs-normal">
+            <div class="columns3 fs-normal maUD">
                 <img  class="w80"src="img/spark.jpg" alt="Spark GT">
                 <ul>
                     <li class="dark">Chevrolet Spark GT 2016</li>
                 </ul>
             </div>
-            <div class="columns3 fs-normal">
+            <div class="columns3 fs-normal maUD">
                 <img  class="w80" src="img/clio.jpg" alt="Clio">
                 <ul>
                     <li class="dark">Renault Clio 2017</li>
@@ -213,11 +236,16 @@
             </div>
         </div>
     </div>
+    <div  class="section" id="Gracias">
+        <div class="container center">
+                <img class="w50" src="img/frase.png" alt="frase">
+        </div>
+    </div>
     <div class="aside bg-dark-gray" id="Tarifas">
       <div class="container" class="columns2 bg-yellow middle">
           <div class="columns2 middle">
-              <h3 class="fs-medium">Las mejores tarifas del mercado</h3>
-              <h4 class="fs-medium normal">Facilidades de pago</h4>
+              <h3 class="fs-medium left">Las mejores tarifas del mercado</h3>
+              <h4 class="fs-medium normal left">Facilidades de pago</h4>
           </div>
           <div class="columns2 fs-normal right middle">
                 <a class="buttom bg-yellow" href="https://wa.me/573107727822?text=Hola,%20me%20interesa%20obtener%20más%20información%20de%20la%20licencia%20de%20conducción%20(C1%20Servicio%20Público)"><img  class="line middle icon" src="img/whatsapp-b.png" alt="wa"> Tarifas</a>
@@ -237,49 +265,46 @@
         </div>
         <div><img class="house" src="img/casitas.jpg" alt="Ciudad"></div>
     </div>
-    <div  class="section" id="Gracias">
-      <div class="container center">
-            <img class="w70" src="img/frase.png" alt="frase">
-      </div>
-  </div>
-    <div id="Footer" class="bg-gray fs-normal  aside">
-        <div class="middle line footer">
-            <div class="columns2 center top">
-                <h3>Certificaciones</h3>
-                <ul>
-                    <li>Resolución del Ministerio de Educación</li>
-                    <li>837491624897</li>
-                    <li>Resolución del Minesterio deTransporte</li>
-                    <li>0042083736567</li>
-                </ul>
-            </div>
-            <div class="columns2 center top ">
-                <h3>Sedes</h3>
-                <ul>
-                    <li>Sede Javeriana</li>
-                    <li> <a href="tel:3174298190"> Tel: 317 429 8190</a></li>
-                    <li>Cra 13 # 41-36 (Ed. Bulevar 42 - Local 8 - Local 3)</li>
-                </ul>
-                <ul>
-                    <li> Sede Restrepo</li>
-                    <li>
-                        <a href="tel:3173717672">Tels: 317 371 7672</a> -  
-                        <a href="tel:0317571135">(1) 757 1135</a>
-                        <a href="tel:0317567218">(1) 756 7218</a>
-                    </li>
-                    <li>Transversal 18 bis # 14-36 (Piso 5)</li>
-                </ul>
-            </div>
-        </div>    
-        <div class="columns3 center middle">
+    <div id="Footer" class="bg-gray  aside">
+        <div class="columns3 center top">
+            <h3>Certificaciones</h3>
+            <ul>
+                <li>Resolución del Ministerio de Educación</li>
+                <li>837491624897</li>
+                <li>Resolución del Minesterio deTransporte</li>
+                <li>0042083736567</li>
+            </ul>
+        </div>
+        <div class="columns3 center top ">
+            <h3>Sedes</h3>
+            <ul>
+                <h4 class="dark">Sede Javeriana</h4>
+                <li> <a href="tel:3174298190"> Tel: 317 429 8190</a></li>
+                <li>Cra 13 # 41-36 (Ed. Bulevar 42 - Local 8 - Local 3)</li>
+            </ul>
+            <ul>
+                <h4 class="dark"> Sede Restrepo</h4>
+                <li>
+                    <a href="tel:3173717672">Tels: 317 371 7672</a> -  
+                    <a href="tel:0317571135">(1) 757 1135</a>
+                    <a href="tel:0317567218">(1) 756 7218</a>
+                </li>
+                <li>Transversal 18 bis # 14-36 (Piso 5)</li>
+            </ul>
+        </div>
+        <div class="columns3 center top">
             <h3>Horaio de atención oficina</h3>
             <ul>
                 <li>Lunes a Viernes de 8:00am - 5:30pm</li>
                 <li>Sábados de 8:00am - 5:30pm </li>
             </ul>
         </div>
+        <div class="center">
+            <img class="logo-footer"  src="img/logo.png" alt="Logo">    
+        </div>
         <p class="allrights center ">All rights reserved © 2019 -3107727822-MDMT developers</p>
     </div>
+    
     
     
     <script type="text/javascript">
