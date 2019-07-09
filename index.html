@@ -95,15 +95,16 @@
 
     }
     </style>
-    <!-- Global site tag (gtag.js) - Google Ads: 727214935 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-727214935"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143543091-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-727214935');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-143543091-1');
+        gtag('config', 'AW-727214935');
     </script>
+
     <!-- Event snippet for Contacto Whatsapp conversion page
     In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
@@ -119,7 +120,9 @@
         });
         return false;
     }
-    </script>  
+    </script> 
+  
+        
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -408,8 +411,8 @@
           const convertions = document.getElementsByName('Convertion')
 
           convertions.forEach(element => {
-              element.addEventListener('click', gtag_report_conversion)
-          });
+              element.addEventListener('click', gtag_report_conversion.bind(null, element.href))
+          })
       </script>
 </body>
 </html>
